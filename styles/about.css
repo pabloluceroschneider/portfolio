@@ -1,5 +1,5 @@
 .about {
-  background-color: var(--blue-light-page-pallete);
+  background-color: var(--secondary-pallete);
 }
 
 .about__container {
@@ -10,7 +10,7 @@
   height: 90vh;
   margin: auto;
   line-height: 40px;
-  color: var(--white-page-pallete);
+  color: var(--white-pallete);
   font-size: 1.5em;
   width: 40%;
   text-align: center;

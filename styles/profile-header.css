@@ -1,5 +1,5 @@
 .profile-header {
-  background: var(--white-page-pallete);
+  background: var(--white-pallete);
 }
 
 .profile-header__container {
@@ -9,7 +9,7 @@
   align-items: center;
   height: 95vh;
   margin: auto;
-  color: var(--blue-page-pallete);
+  color: var(--primary-pallete);
   font-size: 2em;
   width: 80%;
 }
@@ -27,7 +27,7 @@
 .profile-image {
   width: 185px;
   height: 230px;
-  /* filter: drop-shadow(0 0 0.35rem var(--blue-page-pallete)); */
+  /* filter: drop-shadow(0 0 0.35rem var(--primary-pallete)); */
   border-radius: 12%;
 }
 
