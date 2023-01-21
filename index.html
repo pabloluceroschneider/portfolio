@@ -5,17 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pablo Schneider</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
 
-  <header id="profile" class="profile-header">
-    <h1 class="title-name">Pablo Schneider</h1>
-    <h3 class="job-description">SSR Javascript Engineer</h3>
-    <h4 class="specialist">React - Node Specialist</h4>
+  <header id="profile" class="profile-header animate fade">
+    <div class="profile-header__container">
+      
+      <section class="profile-header__hero">
+        <h1 class="profile-header__role">Ssr Full Stack Javascript Developer</h1>
+        <h1 class="profile-header__name">Pablo Schneider</h1>
+      </section>
+      <section class="profile-header__image">
+        <img class="profile-image" src="assets/profile-picture.png" />
+      </section>
+    </div>
   </header>
 
-  <section id="about"></section>
+  <section id="about" class="about">
+    <div class="about__container">
+      <div>
+        <p>I'm a fullstack developer specialized in javascript (React and Node) with 2+ years of experience. </p><br/>
+        <p>I feel comfortable working with agile methods, applying continuous integration and different levels of testing, focused on achieving the best UX/UI.</p>
+      </div>
+    </div>
+  </section>
 
   <section id="experience"></section>
 

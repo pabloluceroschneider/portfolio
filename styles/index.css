@@ -1,0 +1,21 @@
+@import url('./animations.css');
+@import url('./profile-header.css');
+@import url('./about.css');
+@import url('./card.css');
+
+:root {
+  --blue-page-pallete: #191B4F;
+  --blue-light-page-pallete: #8D99AE;
+  --white-page-pallete: #EDF2F4;  
+  --max-width-page: 1200px;
+}
+
+body {
+  font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h3, h4, h5, h6, p, span {
+  margin: 0;
+}
+

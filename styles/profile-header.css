@@ -1,0 +1,45 @@
+.profile-header {
+  background: var(--white-page-pallete);
+}
+
+.profile-header__container {
+  max-width: var(--max-width-page);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  margin: auto;
+  color: var(--blue-page-pallete);
+  font-size: 2em;
+  width: 80%;
+}
+
+.profile-header__hero {
+  flex: auto;
+}
+
+.profile-header__image {
+  flex: 1;
+  text-align: center;
+  margin: 0 16px;
+}
+
+.profile-image {
+  width: 185px;
+  height: 230px;
+  /* filter: drop-shadow(0 0 0.35rem var(--blue-page-pallete)); */
+  border-radius: 12%;
+}
+
+.profile-header__name {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  margin: 0;
+}
+
+.profile-header__role {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}

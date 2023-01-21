@@ -1,0 +1,17 @@
+.about {
+  background-color: var(--blue-light-page-pallete);
+}
+
+.about__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--max-width-page);
+  height: 90vh;
+  margin: auto;
+  line-height: 40px;
+  color: var(--white-page-pallete);
+  font-size: 1.5em;
+  width: 40%;
+  text-align: center;
+}
