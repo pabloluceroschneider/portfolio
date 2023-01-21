@@ -88,3 +88,16 @@
   animation-delay: 1.2s;
   background-color: #c0c0c0;
 }
+
+@media screen and (max-width: 992px) {
+  .profile-header {
+    padding: 40px 0 0;
+  }
+
+  .profile-header__container {
+    flex-direction: column;
+  }
+  .profile-header__hero {
+    flex: 1;
+  }
+}

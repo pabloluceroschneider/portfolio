@@ -7,11 +7,17 @@
   justify-content: center;
   align-items: center;
   max-width: var(--max-width-page);
-  height: 90vh;
+  height: 700px;
   margin: auto;
   line-height: 40px;
   color: var(--white-pallete);
   font-size: 1.5em;
   width: 40%;
   text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .about__container {
+    width: 90%;
+  }
 }
