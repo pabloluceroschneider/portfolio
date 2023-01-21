@@ -43,3 +43,48 @@
   font-size: 20px;
   margin: 0;
 }
+
+.profile-header__tech-list {
+  display: flex;
+  margin: 10px 0;
+  font-size: 10px;
+  gap: 12px;
+  cursor: default;
+}
+
+.profile-header__tech-list .tech-item {
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.react {
+  animation-delay: 0.6s;
+  background-color: #6cd0fa;
+}
+
+.next {
+  animation-delay: 0.7s;
+  background-color: #000;
+  color: white;
+}
+
+.node {
+  animation-delay: 0.8s;
+  background-color: #86cb6a;
+}
+
+.mongo {
+  animation-delay: 1s;
+  background-color: #86cb6a;
+}
+
+.mysql {
+  animation-delay: 1.1s;
+  background-color: #5275de;
+  color: white;
+}
+
+.aws {
+  animation-delay: 1.2s;
+  background-color: #c0c0c0;
+}
