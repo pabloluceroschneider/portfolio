@@ -6,7 +6,6 @@
   animation-fill-mode: backwards;
 }
 
-/* Fade In */
 .animate.fade {
   animation-name: animate-fade;
   animation-timing-function: ease;
@@ -16,3 +15,4 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
