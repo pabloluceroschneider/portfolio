@@ -3,7 +3,7 @@ const experienceItems = document.querySelectorAll('.experience__item');
 const loadClass = (entrys) => {
 	entrys.forEach((entry) => {
 		if (entry.isIntersecting) {
-      entry.target.classList.add('animate-experience');
+      entry.target.classList.add('animation');
     };
 	});
 };

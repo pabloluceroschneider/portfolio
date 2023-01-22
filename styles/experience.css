@@ -25,49 +25,13 @@
   position: relative;
   min-height: 200px;
   font-weight: 200;
-  /* animations */
-  animation-duration: 2s;
+  /* animation */
+  animation-duration: 0.75s;
   animation-delay: 0.5s;
   animation-name: animate-fade;
-  animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+  animation-timing-function: ease-in-out;
   animation-fill-mode: backwards;
 }
-
-/* before = line */
-.experience__item::before {
-  position: absolute;
-  content: '';
-  top: 9px;
-  left: -39px;
-  border-left: 1px solid var(--primary-pallete);
-  /* height: 100%; */
-  /* animation: growth-height 1s ease-in-out; */
-  width: auto;
-}
-
-/* @keyframes growth-height {
-  0% { height: 0%; }
-  100% { height: 100%; }
-}
-
-.experience__item:nth-child(1){
-  animation-delay: 1s;
-}
-.experience__item:nth-child(1)::before {
-  animation-delay: 1s;
-}
-.experience__item:nth-child(2){
-  animation-delay: 2s;
-}
-.experience__item:nth-child(2)::before {
-  animation-delay: 2s;
-}
-.experience__item:nth-child(3){
-  animation-delay: 3s;
-}
-.experience__item:nth-child(3)::before {
-  animation-delay: 3s;
-} */
 
 /* after = circle */
 .experience__item::after {
@@ -84,11 +48,9 @@
 
 .experience__item:last-of-type::after {
   height: 8px;
-  width: 10px;
-  left: -44px;
+  width: 8px;
+  left: -43.5px;
   top: 15px;
-  border-left: none;
-  background: #000;
 }
 
 .experience__item:last-of-type::before {
@@ -102,7 +64,6 @@
   width: 134px;
   background-size: 134px 34px;
 }
-
 
 .experience__logo.mercadolibre {
   background-image: url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.21/mercadolibre/logo__large_plus@2x.png");
@@ -122,6 +83,29 @@
   margin-top: 8px;
   font-size: 18px;
   line-height: 24px;
+}
+
+/* animations */
+/* line growing */
+.experience__item.animation::before {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: -39px;
+  border-left: 1px solid var(--primary-pallete);
+  height: 100%;
+  animation: growth-height 1s ease-in-out;
+  width: auto;
+}
+
+.experience__item.animation:last-of-type::before {
+  border: none;
+  animation: none;
+}
+
+@keyframes growth-height {
+  0%   { height: 0%;   }
+  100% { height: 100%; }
 }
 
 
