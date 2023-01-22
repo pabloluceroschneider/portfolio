@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pablo Schneider</title>
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
     </div>
   </section>
 
-  <section id="experience">
+  <section id="experience" class="experience">
     <div class="experience__container">
 
       <h1 class="experience__title">Work Experience</h1>
@@ -39,19 +39,25 @@
       <div class="experience__items">
 
         <div class="experience__item">
-          <div class="timestamp">2021 - currently</div>
-          <div class="experience__logo mercadolibre"></div>
-          <div class="role">Front End Developer</div>
+          <div class="experience__item-content">
+            <div class="timestamp">2021 - currently</div>
+            <div class="experience__logo experience__logo--mercadolibre"></div>
+            <div class="role">Front End Developer</div>
+          </div>
         </div>
         
         <div class="experience__item">
-          <div class="timestamp">2020</div>
-          <div class="experience__logo flexxus"></div>
-          <div class="role">Full stack Developer</div>
+          <div class="experience__item-content">
+            <div class="timestamp">2020</div>
+            <div class="experience__logo experience__logo--flexxus"></div>
+            <div class="role">Full stack Developer</div>
+          </div>
         </div>
         
         <div class="experience__item">
-          <div class="timestamp">Here I began!</div>
+          <div class="experience__item-content">
+            <div class="timestamp">Here I began!</div>
+          </div>
         </div>
       
       </div>
@@ -64,5 +70,6 @@
 
   <footer></footer>
 
+  <script src="js/intersection-observer.js"></script>
 </body>
 </html>

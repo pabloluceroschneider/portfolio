@@ -1,12 +1,8 @@
 .experience {
-
+  margin-top: 100px;
 }
 
 .experience__container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   max-width: var(--max-width-page);
   height: 700px;
   margin: auto;
@@ -15,32 +11,29 @@
 }
 
 .experience__title {
-  margin: 100px auto;
+  margin: auto;
   font-weight: 400;
   text-align: center;
 }
 
 .experience__items {
-  width: 40%;
-  margin: auto;
+  width: 400px;
+  margin: 60px auto;
 }
 
 .experience__item {
   position: relative;
   min-height: 200px;
   font-weight: 200;
+  /* animation */
+  animation-duration: 0.75s;
+  animation-delay: 0.5s;
+  animation-name: animate-fade;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
 }
 
-.experience__item::before {
-  position: absolute;
-  content: '';
-  top: 9px;
-  left: -39px;
-  border-left: 1px solid var(--primary-pallete);
-  height: 100%;
-  width: auto;
-}
-
+/* after = circle */
 .experience__item::after {
   position: absolute;
   content: '';
@@ -49,22 +42,22 @@
   border-radius: 50%;
   height: 20px;
   width: 20px;
-  top: 9px;
-  left: -50px;
+  top: 0;
 }
 
 .experience__item:last-of-type::after {
-  height: 8px;
-  width: 10px;
-  left: -44px;
-  top: 15px;
-  border-left: none;
-  background: #000;
+  height: 9px;
+  width: 9px;
+  top: 5px;
+  left: 5px;
 }
 
 .experience__item:last-of-type::before {
-  top: 8px;
-  height: 10px;
+  animation: none;
+}
+
+.experience__item-content {
+  margin-left: 32px;
 }
 
 .experience__logo {
@@ -73,25 +66,49 @@
   background-size: 134px 34px;
 }
 
-
-.experience__logo.mercadolibre {
+.experience__logo--mercadolibre {
   background-image: url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.21/mercadolibre/logo__large_plus@2x.png");
   margin-left: -4px;
 }
 
-.experience__logo.flexxus {
+.experience__logo--flexxus {
   background-image: url("https://flexxus.com.ar/wp-content/uploads/elementor/thumbs/logo-flexxus-header-pv8liah8khv6xfynvz03so9v98sk2tr50hts9we7dk.png");
   margin-left: -8px;
 }
 
 .experience__item .timestamp {
   font-size: 14px;
+  line-height: 14px;
+  padding: 4px 0 8px;
 }
 
 .experience__item .role {
   margin-top: 8px;
   font-size: 18px;
   line-height: 24px;
+}
+
+/* animations */
+/* line growing */
+.experience__item.animation::before {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 10px;
+  border-left: 1px solid var(--primary-pallete);
+  height: 100%;
+  animation: growth-height 1s ease-in-out;
+  width: auto;
+}
+
+.experience__item.animation:last-of-type::before {
+  border: none;
+  animation: none;
+}
+
+@keyframes growth-height {
+  0%   { height: 0%;   }
+  100% { height: 100%; }
 }
 
 
