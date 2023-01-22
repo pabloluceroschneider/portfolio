@@ -6,7 +6,6 @@
   animation-fill-mode: backwards;
 }
 
-/* Fade In */
 .animate.fade {
   animation-name: animate-fade;
   animation-timing-function: ease;
@@ -15,4 +14,31 @@
 @keyframes animate-fade {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* ------------------ */
+/* animate-experience */
+/* ------------------ */
+.animate-experience {
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+  animation-fill-mode: backwards;
+}
+
+.animate-experience::before {
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: -39px;
+  border-left: 1px solid var(--primary-pallete);
+  height: 100%;
+  animation: growth-height 1s ease-in-out;
+  width: auto;
+}
+
+@keyframes growth-height {
+  0% { height: 0%; }
+  100% { height: 100%; }
 }
