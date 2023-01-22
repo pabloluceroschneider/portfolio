@@ -3,15 +3,15 @@
 }
 
 .profile-header__container {
-  max-width: var(--max-width-page);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  max-width: var(--max-width-page);
+  width: 80%;
+  height: 600px;
   margin: auto;
   color: var(--primary-pallete);
   font-size: 2em;
-  width: 80%;
 }
 
 .profile-header__hero {
@@ -27,7 +27,6 @@
 .profile-image {
   width: 185px;
   height: 230px;
-  /* filter: drop-shadow(0 0 0.35rem var(--primary-pallete)); */
   border-radius: 12%;
 }
 
@@ -93,11 +92,23 @@
   .profile-header {
     padding: 40px 0 0;
   }
-
+  
   .profile-header__container {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: start;
   }
+  
   .profile-header__hero {
-    flex: 1;
+    flex: 0;
+  }
+
+  .profile-header__image {
+    flex: 0;
+    margin: 16px;
+  }
+
+  .profile-image {
+    width: 85px;
+    height: 110px;
   }
 }
