@@ -89,4 +89,8 @@
   .profile-header__image {
     width: 400px;
   }
+
+  .profile-header__name {
+    padding: 12px 0;
+  }
 }
