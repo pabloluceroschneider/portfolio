@@ -8,7 +8,7 @@
   align-items: center;
   max-width: var(--max-width-page);
   width: 80%;
-  height: 600px;
+  height: 650px;
   margin: auto;
   color: var(--primary-pallete);
   font-size: 2em;
@@ -83,7 +83,7 @@
 @media screen and (max-width: 992px) {
   .profile-header__container {
     flex-direction: column;
-    padding: 50px 0;
+    padding: 60px 0 0;
   }
 
   .profile-header__image {
