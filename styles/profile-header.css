@@ -15,20 +15,30 @@
 }
 
 .profile-header__hero {
-  flex: auto;
+  flex: 600px;
 }
 
 .profile-header__image {
-  flex: 1;
-  text-align: center;
-  margin: 0 16px;
+  flex: 400px;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.profile-image {
-  width: 185px;
-  height: 230px;
-  border-radius: 12%;
+.profile-header__image::before{
+  content: url('../assets/shape__profile-image.svg');
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: calc(50% - 180px);
 }
+
+/* .profile-header__image::after{
+  content: url('../assets/profile-picture.png');
+  position: absolute;
+  width: 100px;
+  height: 100px;
+} */
 
 .profile-header__name {
   font-weight: 400;
