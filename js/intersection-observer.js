@@ -4,7 +4,7 @@ const loadClass = (entrys) => {
 	entrys.forEach((entry) => {
 		if (entry.isIntersecting) {
       entry.target.classList.add('animation');
-    };
+    }
 	});
 };
 

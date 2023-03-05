@@ -15,19 +15,11 @@
 }
 
 .profile-header__hero {
-  flex: auto;
+  flex: 600px;
 }
 
 .profile-header__image {
-  flex: 1;
-  text-align: center;
-  margin: 0 16px;
-}
-
-.profile-image {
-  width: 185px;
-  height: 230px;
-  border-radius: 12%;
+  flex: 400px;
 }
 
 .profile-header__name {
@@ -89,26 +81,16 @@
 }
 
 @media screen and (max-width: 992px) {
-  .profile-header {
-    padding: 40px 0 0;
-  }
-  
   .profile-header__container {
-    flex-direction: column-reverse;
-    align-items: start;
-  }
-  
-  .profile-header__hero {
-    flex: 0;
+    flex-direction: column;
+    padding: 50px 0;
   }
 
   .profile-header__image {
-    flex: 0;
-    margin: 16px;
+    width: 400px;
   }
 
-  .profile-image {
-    width: 85px;
-    height: 110px;
+  .profile-header__name {
+    padding: 12px 0;
   }
 }
