@@ -4,6 +4,7 @@
 @import url('./about.css');
 @import url('./card.css');
 @import url('./experience.css');
+@import url('./contact.css');
 
 :root {
   --primary-pallete: #191B4F;

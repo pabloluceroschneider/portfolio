@@ -36,6 +36,7 @@
 
 @media screen and (max-width: 992px) {
   .top-nav ul {
-    justify-items: center;
+    justify-content: space-between;
+    gap: 16px;
   }
 }
