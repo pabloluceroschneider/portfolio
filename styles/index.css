@@ -1,4 +1,5 @@
 @import url('./animations.css');
+@import url('./top-nav.css');
 @import url('./profile-header.css');
 @import url('./about.css');
 @import url('./card.css');
@@ -12,9 +13,14 @@
   --max-width-page: 1200px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   margin: 0;
+  padding: 0;
   background-color: var(--white-pallete);
 }
 

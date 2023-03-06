@@ -9,14 +9,24 @@
 </head>
 <body>
 
-  <header id="profile" class="profile-header animate fade">
+  <div id="home" />
+
+  <nav id="top-nav" class="top-nav animate fade">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+    </ul>
+  </nav>
+
+  <header class="profile-header animate fade">
     <div class="profile-header__container">
       <section class="profile-header__hero">
         <h1 class="profile-header__role">Ssr Full Stack Javascript Engineer</h1>
         <h1 class="profile-header__name">Pablo Schneider</h1>
       </section>
       <section class="profile-header__image">
-        <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <svg class="profile-header__shape" id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="image-pattern" height="100%" width="100%" patternContentUnits="objectBoundingBox" class="profile-image">
               <image y="0.07" x="0" height="1" width="1" preserveAspectRatio="xMidYMid meet" xlink:href="assets/profile-picture-2.png" class="profile-image"/>

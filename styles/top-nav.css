@@ -1,0 +1,40 @@
+.top-nav {
+  position: sticky;
+  top: 0;
+  margin: auto;
+  color: var(--primary-pallete);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.top-nav ul {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0;
+}
+
+.top-nav li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: var(--primary-pallete);
+}
+
+.top-nav a:link,
+.top-nav a:visited,
+.top-nav a:hover,
+.top-nav a:active {
+  /* color: var(--primary-pallete); */
+  color: var(--primary-pallete);
+}
+
+@media screen and (max-width: 992px) {
+  .top-nav ul {
+    justify-items: center;
+  }
+}
