@@ -3,7 +3,8 @@
   top: 0;
   margin: auto;
   color: var(--primary-pallete);
-  backdrop-filter: blur(8px);
+  background: var(--white-pallete);
+  box-shadow: 0px 2px 7px var(--white-pallete);
   z-index: 10;
 }
 
