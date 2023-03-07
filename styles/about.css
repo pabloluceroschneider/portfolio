@@ -1,5 +1,5 @@
 .about {
-  background-color: var(--secondary-pallete);
+  background-color: #5D6586;
   margin-top: -12px;
 }
 
@@ -17,8 +17,14 @@
   text-align: center;
 }
 
+#wave__before-about,
+#wave__after-about {
+  margin-top: -12px;
+}
+
 @media screen and (max-width: 992px) {
   .about__container {
     width: 90%;
+    height: 520px;
   }
 }
