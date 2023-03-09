@@ -97,7 +97,7 @@
   left: 10px;
   border-left: 1px solid var(--primary-pallete);
   height: 100%;
-  animation: growth-height 1s ease-in-out;
+  animation: growth-height 2s ease-in-out;
   width: auto;
 }
 
