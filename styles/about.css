@@ -4,6 +4,7 @@
 
 .about-container {
   background-color: var(--secondary-pallete);
+  background: linear-gradient(180deg, var(--secondary-pallete), #7b889e, var(--secondary-pallete));
   margin-top: -12px;
 }
 
