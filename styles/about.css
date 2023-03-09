@@ -1,5 +1,9 @@
 .about {
-  background-color: #5D6586;
+  padding-top: 100px;
+}
+
+.about-container {
+  background-color: var(--secondary-pallete);
   margin-top: -12px;
 }
 
@@ -8,8 +12,8 @@
   justify-content: center;
   align-items: center;
   max-width: var(--max-width-page);
-  height: 700px;
   margin: auto;
+  padding: 32px 0;
   line-height: 40px;
   color: var(--white-pallete);
   font-size: 1.5em;
@@ -17,12 +21,19 @@
   text-align: center;
 }
 
-#wave__before-about,
-#wave__after-about {
-  margin-top: -12px;
+.about__skewed-before {
+  margin-top: -100px;
+}
+
+.about__skewed-after {
+  margin-top: -2px;
 }
 
 @media screen and (max-width: 992px) {
+  .about__skewed-before {
+    margin-top: -200px;
+  }
+
   .about__container {
     width: 90%;
     height: 520px;
